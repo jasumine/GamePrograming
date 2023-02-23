@@ -1,0 +1,4 @@
+﻿  Study8.cpp
+C:\Users\Administrator\Desktop\Study8\Study8\Study8.cpp(49): warning C4172: 지역 변수 또는 임시: value의 주소를 반환하고 있습니다.
+C:\Users\Administrator\Desktop\Study8\Study8\Study8.cpp(56): warning C4172: 지역 변수 또는 임시: value의 주소를 반환하고 있습니다.
+  Study8.vcxproj -> C:\Users\Administrator\Desktop\Study8\x64\Debug\Study8.exe
