@@ -80,7 +80,7 @@ int main()
 	cout << ptr << " " << *ptr << &ptr <<endl; // value의 주소 , value 값(5) , ptr의 주소
 	cout << ptrptr << " " << *ptrptr << " " << &ptrptr << endl; // ptr의 주소, value의 주소, ptrptr의 주소
 	cout << **ptrptr << endl; // value의 값(5) =  *(*ptrptr) = *(ptr)
-	
+	*/
 	int num1 = 10, num2 = 20, num3 = 30;
 	int* ptr1 = &num1;
 	int* ptr2 = &num2;
@@ -95,9 +95,25 @@ int main()
 	cout << ptr1 << " " << ptr2 << " " << ptr3 << " " << endl; 
 	cout << dptr[0] << " " << dptr[1] << " " << dptr[2] << " " << endl; // ptr
 	cout << *(dptr[0]) << " " << *(dptr[1]) << " " << *(dptr[2]) << endl; // &ptr1, &ptr2, &ptr3 이 왜 안나올까?!
+
+	cout << "========num===========" <<endl;
+	cout << num1 << " " << num2 << " " << num3 << endl; // 10, 20, 30
+	cout << &num1 << " " << &num2 << " " << &num3 << endl; // num1의 주소값, +4, +4
+	cout << "=========ptr==========" <<endl;
+	cout << ptr1 << " " << ptr2 << " " << ptr3 << <endl; // num1의 주소값, +4, +4
+	cout << *ptr1 << " " << *ptr2 << " " << *ptr3 << <endl; // 10, 20, 30
+	cout << &ptr1 << " " << &ptr2 << " " << &ptr3 << <endl; // ptr1의 주소값, +4, +4
+	cout << "==========ptrArr=========" <<endl;
+	cout << ptrArr[0]<< " " << ptrArr[1] << " " << ptrArr[2]<<endl; // ptr1의 값(num1의 주소값), +4, +4
+	cout << *ptrArr[0]<< " " << *ptrArr[1] << " " << *ptrArr[2]<<endl; // 10, 20, 30
+	cout << &ptrArr[0]<< " " << &ptrArr[1] << " " << &ptrArr[2]<<endl; // ptrrArr[0]의 주소값, +4, +4
+	cout << "==========dptr=========" <<endl;
+	cout << dptr[0]<< " " << dptr[1] << " " << dptr[2]<<endl; // ptrArr[0]의 값(ptr1의 주소값), +4, +4
+	cout << *dptr[0]<< " " << *dptr[1] << " " << *dptr[2]<<endl; // ptrArr[0]의 포인터 값(ptr의 포인터값) 10, 20 ,30
+	cout << &dptr[0]<< " " << &dptr[1] << " " << &dptr[2]<<endl; // dptr[0]의 주소값, +4, +4
 	// *(*ptrArr[0])인가 ??
 
-
+/*
 	int arr2d[3][3];
 
 	cout << arr2d <<" " << arr2d[0] << " " << &arr2d[0][0] << endl; // 같은주소가 나온다.
