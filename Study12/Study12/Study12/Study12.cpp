@@ -50,7 +50,7 @@ private: // class의 크기
 // Player player[10000]
 
 int main()
-{/*
+{
 	int a; // 스택 영역(메모리 할당)
 
 	cout << sizeof(Player) << endl;
@@ -64,8 +64,8 @@ int main()
 	// c++ (malloc->new) // 생성자 소멸자 호출o
 	// 객체 포인터
 	Player* p2 = new Player;
-	p1->SetHp(200);
-	delete p1;
+	p2->SetHp(200);
+	delete p2;
 	
 
 //	Player player[1000000]; // stack overflow 가 발생.
@@ -92,7 +92,7 @@ int main()
 		ptr2++;
 	}
 	delete[] arrayPtr;
-	*/
+	
 
 	// 1) 배열 3개짜리를 만들어서 player hp를 입력 받아서 다음과 같이 실해오디기
 	// player 1의 hp : 10
@@ -117,7 +117,7 @@ int main()
 	// 최소 hp를 입력하세요 : 20
 	// 20보다 hp가 높은 플레이어는 정동규 30 임지우 40입니다.
 
-/*	// 1)
+	// 1)
 	Player* player = new Player[3];
 	for (int i = 0; i < 3; i++)
 	{
@@ -133,8 +133,8 @@ int main()
 		// if(player[i].getHp()>20) count++;
 	}
 	cout << "hp가 20보다 높은 플레이어는 " << count << "명 입니다." << endl;
-*/
-/*	// 2)
+
+	// 2)
 	int playerNum = 0;
 	cout << "플레이어의 숫자를 입력하세요. ";
 	cin >> playerNum;
@@ -154,7 +154,7 @@ int main()
 	}
 	cout << "hp가 20보다 높은 플레이어는 " << count << "명 입니다." << endl;
 	delete[] player;
-*/
+
 	// 3)
 	int playerNum;
 	cout << "플레이어의 숫자를 입력하세요. ";

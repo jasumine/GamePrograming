@@ -1,30 +1,30 @@
-// ±æÀÌ°¡ 10ÀÎ ¹è¿­, 10°³ÀÇ Á¤¼ö ÀÔ·Â¹Þ¾Æ¼­, È¦¼ö¿Í Â¦¼ö¸¦ ³ª´©¾î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
-// 10°³ÀÇ ¹è¿­Àº main¿¡¼­ ¹Þ°í, ¹è¿­³»¿¡ Á¸ÀçÇÏ´Â È¦¼ö¸¸ Ãâ·ÂÇÏ´Â ÇÔ¼ö,
-// ¹è¿­³»¿¡ Â¦¼ö¸¸ Ãâ·ÂÇÏ´Â ÇÔ¼ö¸¦ Á¤ÀÇÇØ¼­ µÎ ÇÔ¼ö¸¦ È£Ãâ
+ï»¿// ê¸¸ì´ê°€ 10ì¸ ë°°ì—´, 10ê°œì˜ ì •ìˆ˜ ìž…ë ¥ë°›ì•„ì„œ, í™€ìˆ˜ì™€ ì§ìˆ˜ë¥¼ ë‚˜ëˆ„ì–´ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
+// 10ê°œì˜ ë°°ì—´ì€ mainì—ì„œ ë°›ê³ , ë°°ì—´ë‚´ì— ì¡´ìž¬í•˜ëŠ” í™€ìˆ˜ë§Œ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜,
+// ë°°ì—´ë‚´ì— ì§ìˆ˜ë§Œ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜ë¥¼ ì •ì˜í•´ì„œ ë‘ í•¨ìˆ˜ë¥¼ í˜¸ì¶œ
 
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-void zero(int numbers[]) // Â¦¼ö Ãâ·Â ÇÔ¼ö
+void zero(int numbers[]) // ì§ìˆ˜ ì¶œë ¥ í•¨ìˆ˜
 {
 	for (int i = 0; i < 10; i++)
 	{
 		if (numbers[i] % 2 == 0)
 		{
-			cout << "Â¦¼ö : " << numbers[i] << ",";
+			cout << "ì§ìˆ˜ : " << numbers[i] << ",";
 		}
 	}
 }
 
-void one(int numbers[]) // È¦¼ö Ãâ·Â ÇÔ¼ö
+void one(int numbers[]) // í™€ìˆ˜ ì¶œë ¥ í•¨ìˆ˜
 {
 	for (int i = 0; i < 10; i++)
 	{
 		if (numbers[i] % 2 == 1)
 		{
-			cout << "È¦¼ö : " << numbers[i] << " ,";
+			cout << "í™€ìˆ˜ : " << numbers[i] << " ,";
 		}
 	}
 }
@@ -32,7 +32,7 @@ void one(int numbers[]) // È¦¼ö Ãâ·Â ÇÔ¼ö
 int main()
 {
 	int numbers[10];
-	cout << "Á¤¼ö 10°³¸¦ ÀÔ·Â ÇÏ¼¼¿ä." << endl;
+	cout << "ì •ìˆ˜ 10ê°œë¥¼ ìž…ë ¥ í•˜ì„¸ìš”." << endl;
 	for (int i = 0; i < 10; i++)
 	{
 		cin >> numbers[i];

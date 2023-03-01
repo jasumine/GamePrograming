@@ -100,18 +100,34 @@ int main()
 	cout << num1 << " " << num2 << " " << num3 << endl; // 10, 20, 30
 	cout << &num1 << " " << &num2 << " " << &num3 << endl; // num1의 주소값, +4, +4
 	cout << "=========ptr==========" <<endl;
-	cout << ptr1 << " " << ptr2 << " " << ptr3 << <endl; // num1의 주소값, +4, +4
-	cout << *ptr1 << " " << *ptr2 << " " << *ptr3 << <endl; // 10, 20, 30
-	cout << &ptr1 << " " << &ptr2 << " " << &ptr3 << <endl; // ptr1의 주소값, +4, +4
+	cout << ptr1 << " " << ptr2 << " " << ptr3 << endl; // num1의 주소값, +4, +4
+	cout << *ptr1 << " " << *ptr2 << " " << *ptr3 << endl; // 10, 20, 30
+	cout << &ptr1 << " " << &ptr2 << " " << &ptr3 << endl; // ptr1의 주소값, +4, +4
 	cout << "==========ptrArr=========" <<endl;
 	cout << ptrArr[0]<< " " << ptrArr[1] << " " << ptrArr[2]<<endl; // ptr1의 값(num1의 주소값), +4, +4
 	cout << *ptrArr[0]<< " " << *ptrArr[1] << " " << *ptrArr[2]<<endl; // 10, 20, 30
 	cout << &ptrArr[0]<< " " << &ptrArr[1] << " " << &ptrArr[2]<<endl; // ptrrArr[0]의 주소값, +4, +4
+	cout << &ptrArr << endl; // ptrArr[0]의 주소값과 같다.
 	cout << "==========dptr=========" <<endl;
 	cout << dptr[0]<< " " << dptr[1] << " " << dptr[2]<<endl; // ptrArr[0]의 값(ptr1의 주소값), +4, +4
 	cout << *dptr[0]<< " " << *dptr[1] << " " << *dptr[2]<<endl; // ptrArr[0]의 포인터 값(ptr의 포인터값) 10, 20 ,30
-	cout << &dptr[0]<< " " << &dptr[1] << " " << &dptr[2]<<endl; // dptr[0]의 주소값, +4, +4
-	// *(*ptrArr[0])인가 ??
+	cout << &dptr[0]<< " " << &dptr[1] << " " << &dptr[2]<<endl; // dptr[0]의 주소값, +4, +4 --> ptrArr[0]의 주소값, +4 ,+4가 나왔다.
+	cout << &dptr << " " << &dptr + 1 << " " << &dptr + 2 << " " << &dptr + 3 << endl; // ptrArr[0]의 주소값이 아닌 새로운 값이 나왔고, ptrArr[0]과 12 차이가 난다.
+	cout << *(&dptr) << " " << *(&dptr + 1) << " " << *(&dptr + 2) << " " << *(&dptr + 3) << endl; // ptrArr[0]의 주소값이 아닌 새로운 값이 나왔고, ptrArr[0]과 12 차이가 난다.
+
+/*	int* ptrArr[] = {ptr1,ptr2,ptr3}; 	int** dptr = ptrArr; 이기 때문에 
+*	*dptr[0]의 값이 
+*	1) ptrArr[0]의 값인 ptr1의 값(num1의 주소값)이 나오지 않고,
+*	2) ptrArr[0]의 포인터값(ptr의 포인터값)인 10, 20, 30이 나왔다.
+* 
+*	1)에서 예상한 값이 나오게 할려면 &dptr을 찍어서 ++ 해주면 된다.
+*	+3을 할경우 &dptr[0]의 값이 나온다. *(&dptr)은 &dptr[0]의 값과 같다. 
+* 
+*	값이 입력되어 있지 않을 것이라고 생각했지만, dptr의 주소값에 ptr의 주소값이 입력되어 있었다.
+*	*(&dptr+3)의 값은 num1의 주소값(ptr 1의 값)이 나왔지만, 나머지 +1과 +2는 알 수 없는 값이 나왔다.
+* dptr[0]에는 ptrArr[0]의 값이 저장되어있고, ptrArr[0]에는 ptr1이 저장되어있는 이중포인터 구조이다.
+
+
 
 /*
 	int arr2d[3][3];
@@ -187,19 +203,19 @@ int main()
 		*/
 	// ============================================
 
-	const int value = 5;
-	const int* ptr = &value;
-//	*tr = 6; 주소에 저장된 값을 바꾸지 않겠다.
-
-	cout << *ptr << endl; 
-
-	int value2 = 6;
-	int* const ptr2= &value2; 
-
-	ptr = &value2; // 주소는 바꿀 수 있다. ?!
-
-	*ptr2 = 10;
-	int vlue3 = 5;
+//	const int value = 5;
+//	const int* ptr = &value;
+////	*tr = 6; 주소에 저장된 값을 바꾸지 않겠다.
+//
+//	cout << *ptr << endl; 
+//
+//	int value2 = 6;
+//	int* const ptr2= &value2; 
+//
+//	ptr = &value2; // 주소는 바꿀 수 있다. ?!
+//
+//	*ptr2 = 10;
+//	int vlue3 = 5;
 // 	ptr2 = &value3; // 주소값 자체를 바꾸지 않겠다. 
 
 }

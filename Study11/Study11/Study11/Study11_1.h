@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <iostream>
 
 using namespace std;
@@ -19,16 +19,16 @@ public:
 	Circle()
 	{
 		_radius = 1;
-		cout << "¹ÝÁö¸§ÀÌ " << _radius << "ÀÎ ¿ø »ý¼º" << endl;
+		cout << "ë°˜ì§€ë¦„ì´ " << _radius << "ì¸ ì› ìƒì„±" << endl;
 	}
 	Circle(int radius)
 	{
 		_radius = radius;
-		cout << "¹ÝÁö¸§ÀÌ " << _radius << "ÀÎ ¿ø »ý¼º" << endl;
+		cout << "ë°˜ì§€ë¦„ì´ " << _radius << "ì¸ ì› ìƒì„±" << endl;
 	}
 	~Circle()
 	{
-		cout << "¹ÝÁö¸§ÀÌ " << _radius << "ÀÎ ¿ø ¼Ò¸ê" << endl;
+		cout << "ë°˜ì§€ë¦„ì´ " << _radius << "ì¸ ì› ì†Œë©¸" << endl;
 	}
 	int getArea()
 	{
@@ -45,20 +45,20 @@ public:
 	Rectangle()
 	{
 		_height, _width = 1;
-		cout << "³ôÀÌ : " << _height << 
-			", ±æÀÌ : " << _width << "ÀÎ »ç°¢Çü »ý¼º" << endl;
+		cout << "ë†’ì´ : " << _height << 
+			", ê¸¸ì´ : " << _width << "ì¸ ì‚¬ê°í˜• ìƒì„±" << endl;
 	}
 	Rectangle(int height, int width)
 	{
 		_height = height;
 		_width = width;
-		cout << "³ôÀÌ : " << _height <<
-			", ±æÀÌ : " << _width << "ÀÎ »ç°¢Çü »ý¼º" << endl;
+		cout << "ë†’ì´ : " << _height <<
+			", ê¸¸ì´ : " << _width << "ì¸ ì‚¬ê°í˜• ìƒì„±" << endl;
 	}
 	~Rectangle()
 	{
-		cout << "³ôÀÌ : " << _height <<
-			", ±æÀÌ : " << _width << "ÀÎ »ç°¢Çü ¼Ò¸ê" << endl;
+		cout << "ë†’ì´ : " << _height <<
+			", ê¸¸ì´ : " << _width << "ì¸ ì‚¬ê°í˜• ì†Œë©¸" << endl;
 	}
 
 	int getArea()
@@ -83,13 +83,13 @@ public:
 	{
 		_name = name;
 		_total = money;
-		cout << "ÀÌ¸§ : " << _name <<
-			", ÀÜ¾× : " << _total << "ÀÎ °èÁÂ »ý¼º" << endl;
+		cout << "ì´ë¦„ : " << _name <<
+			", ìž”ì•¡ : " << _total << "ì¸ ê³„ì¢Œ ìƒì„±" << endl;
 	}
 	~Account()
 	{
-		cout << "ÀÌ¸§ : " << _name <<
-			", ÀÜ¾× : " << _total << "ÀÎ °èÁÂ ¼Ò¸ê" << endl;
+		cout << "ì´ë¦„ : " << _name <<
+			", ìž”ì•¡ : " << _total << "ì¸ ê³„ì¢Œ ì†Œë©¸" << endl;
 	}
 	void deposit(int money)
 	{
@@ -119,20 +119,20 @@ public:
 	Oval()
 	{
 		_height, _width = 1;
-		cout << "³ôÀÌ : " << _height <<
-			", ³ÐÀÌ : " << _width << "ÀÎ Å¸¿ø »ý¼º" << endl;
+		cout << "ë†’ì´ : " << _height <<
+			", ë„“ì´ : " << _width << "ì¸ íƒ€ì› ìƒì„±" << endl;
 	}
 	Oval(int height, int widht)
 	{
 		_height = height;
 		_width = widht;
-		cout << "³ôÀÌ : " << _height <<
-			", ³ÐÀÌ : " << _width << "ÀÎ Å¸¿ø »ý¼º" << endl;
+		cout << "ë†’ì´ : " << _height <<
+			", ë„“ì´ : " << _width << "ì¸ íƒ€ì› ìƒì„±" << endl;
 	}
 	~Oval()
 	{
-		cout << "³ôÀÌ : " << _height <<
-			", ³ÐÀÌ : " << _width << "ÀÎ °èÁÂ ¼Ò¸ê" << endl;
+		cout << "ë†’ì´ : " << _height <<
+			", ë„“ì´ : " << _width << "ì¸ ê³„ì¢Œ ì†Œë©¸" << endl;
 	}
 	void set(int height, int width)
 	{
@@ -141,8 +141,8 @@ public:
 	}
 	void show()
 	{
-		cout << "³ôÀÌ : " << _height <<
-			", ³ÐÀÌ : " << _width << endl;
+		cout << "ë†’ì´ : " << _height <<
+			", ë„“ì´ : " << _width << endl;
 	}
 	int getWidth()
 	{

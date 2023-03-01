@@ -18,5 +18,8 @@
     <ClCompile Include="Study12.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Study12_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
