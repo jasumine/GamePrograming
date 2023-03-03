@@ -169,7 +169,7 @@ int main()
 
 	cout << "사전에서 제일 뒤에 나오는 문자열은 " << latters << "입니다.";
 	*/
-	/*
+	
 	// 5) 문자열을 입력받고 문자열에서 문자를 찾아 다른 문자열로 대체하는 프로그램.
 	// dreams come true
 	// 찾을 단어 : come
@@ -195,8 +195,25 @@ int main()
 	str.clear();
 	str = frontstr + newWord + backstr;
 	cout << str;
-*/
 
+	// 5-2)
+	cout << "문자열을 입력하세요. ";
+	string str;
+	getline(cin, str);
+
+	string findWord;
+	string replaceWord;
+	cout << "찾을 단어 : ";
+	getline(cin,findWord);
+	cout << "대체할 단어 : ";
+	getline(cin,replaceWord);
+
+	string findIndex = str.find(findWord); // findIndex에 찾은 위치를 넣고
+	str.replace(findIndex, find.length(), replaceWord); // findIndex부터 find의 길이만큼 replaceWord로 대체
+	cout <<str<<endl;
+
+
+/*
 	// 6)문자열을 입력받고 한글자씩 뒤로가게.
 	// i love you
 	// love youi
