@@ -16,7 +16,7 @@ int Strlen(const char* str)
 }
 
 // 문자열 복사 abc def abc // 1)포인터, 2)배열
-char* StrCpy(char* dest, char* src) // dest에 src값을 넣는다.
+char* StrCpy(char* dest, char* src) 
 {
 	for (int i = 0; i < sizeof(src); i++)
 	{
