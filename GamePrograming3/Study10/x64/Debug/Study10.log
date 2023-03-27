@@ -1,0 +1,4 @@
+﻿  Study10.cpp
+ex02.obj : error LNK2005: main이(가) ex01.obj에 이미 정의되어 있습니다.
+Study10.obj : error LNK2005: main이(가) ex01.obj에 이미 정의되어 있습니다.
+C:\Users\Administrator\Desktop\Study10\x64\Debug\Study10.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
