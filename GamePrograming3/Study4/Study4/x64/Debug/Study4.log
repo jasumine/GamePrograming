@@ -1,0 +1,6 @@
+﻿  Study4.cpp
+D:\Project\GamePrograming2\GamePrograming3\Study4\Study4\Study4.cpp(39,10): warning C4552: '+': 식의 결과가 사용되지 않습니다.
+D:\Project\GamePrograming2\GamePrograming3\Study4\Study4\Study4.cpp(48,10): warning C4552: '+': 식의 결과가 사용되지 않습니다.
+D:\Project\GamePrograming2\GamePrograming3\Study4\Study4\Study4.cpp(57,10): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+D:\Project\GamePrograming2\GamePrograming3\Study4\Study4\Study4.cpp(66,10): warning C4552: '-': 식의 결과가 사용되지 않습니다.
+  Study4.vcxproj -> D:\Project\GamePrograming2\GamePrograming3\Study4\x64\Debug\Study4.exe
