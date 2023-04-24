@@ -1,0 +1,7 @@
+﻿  Study10.cpp
+C:\Users\Administrator\Desktop\Study10\Study10\Study10.cpp(42,21): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\Study10\Study10\Study10.cpp(73,24): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\Study10\Study10\Study10.cpp(90,21): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\Study10\Study10\Study10.cpp(118,24): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\Study10\Study10\Study10.cpp(137,21): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Study10.vcxproj -> C:\Users\Administrator\Desktop\Study10\x64\Debug\Study10.exe
